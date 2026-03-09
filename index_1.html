@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E Doc Electrical | Domestic · Commercial · Industrial | Ireland</title>
+  <meta name="description" content="Trusted electrical services across Ireland. Domestic, Commercial & Industrial. Fully certified, 3+ years experience, 40+ happy clients. Contact Derek Keegan today." />
+  <meta name="keywords" content="electrician ireland, electrical services ireland, domestic electrician, commercial electrician, industrial electrician, Derek Keegan electrician" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+<!-- ============================================================
+     FLOATING CTAs
+============================================================ -->
+<div class="fab-group">
+  <a href="https://wa.me/353871234567?text=Hi%20Derek%2C%20I%20want%20your%20service" target="_blank" class="fab fab-wa" title="WhatsApp Us">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+353871234567" class="fab fab-call" title="Call Now">
+    <i class="fas fa-phone"></i>
+  </a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-icon">⚡</div>
+      <div>
+        <div class="logo-text">E.<span>Doc</span> Electrical</div>
+        <span class="logo-sub">Powered by expertise</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary" style="padding:10px 22px; font-size:0.85rem;">
+        Get a Quote
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#areas" onclick="toggleMenu()">Areas</a>
+  <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="tel:+353871234567" style="color:var(--yellow)"><i class="fas fa-phone-alt"></i> +353 87 123 4567</a>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-lines"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="badge hero-badge">
+        <i class="fas fa-bolt"></i> Certified Electrical Contractor · Ireland
+      </div>
+
+      <h1 class="hero-title">
+        Power Your<br />
+        <span>Home &amp;</span><br />
+        Business
+      </h1>
+
+      <p class="hero-desc">
+        Professional domestic, commercial &amp; industrial electrical services delivered safely, on time, every time. Serving clients across Ireland with expertise you can trust.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Book a Free Call
+        </a>
+        <a href="https://wa.me/353871234567?text=Hi%20Derek%2C%20I%20want%20your%20service" target="_blank" class="btn btn-outline btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> <span>WhatsApp Now</span>
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <div class="hero-trust-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="hero-trust-label"><strong>Fully Certified</strong>Safe &amp; compliant work</div>
+        </div>
+        <div class="hero-trust-item">
+          <div class="hero-trust-icon"><i class="fas fa-clock"></i></div>
+          <div class="hero-trust-label"><strong>On-Time Always</strong>We respect your schedule</div>
+        </div>
+        <div class="hero-trust-item">
+          <div class="hero-trust-icon"><i class="fas fa-star"></i></div>
+          <div class="hero-trust-label"><strong>4.8★ Rated</strong>40+ satisfied clients</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ============================================================
+     TICKER BAR
+============================================================ -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <!-- doubled for seamless loop -->
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Domestic Installations</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Commercial Fit-Outs</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Industrial Wiring</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Fault Finding &amp; Repairs</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Fuse Board Upgrades</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Emergency Callouts</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> EV Charger Installation</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> LED &amp; Lighting Design</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Domestic Installations</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Commercial Fit-Outs</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Industrial Wiring</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Fault Finding &amp; Repairs</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Fuse Board Upgrades</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> Emergency Callouts</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> EV Charger Installation</span>
+    <span class="ticker-item"><i class="fas fa-bolt"></i> LED &amp; Lighting Design</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     PROBLEM / AGITATE
+============================================================ -->
+<section id="problem" class="section-pad">
+  <div class="container">
+    <div class="problem-grid">
+      <!-- Image side -->
+      <div class="problem-image reveal-left">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
+          alt="Electrical panel work"
+          loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80'"
+        />
+        <div class="stat-badge">
+          3+<small>Years<br/>Experience</small>
+        </div>
+      </div>
+
+      <!-- Text side -->
+      <div class="reveal-right">
+        <div class="badge"><i class="fas fa-exclamation-triangle"></i> The Real Risk</div>
+        <h2 class="section-title" style="margin-top:18px;">
+          Bad Wiring<br/>
+          Costs More<br/>
+          Than <span>Money</span>
+        </h2>
+        <p class="section-sub">
+          Every year, faulty electrical work causes house fires, appliance damage, and serious injury. The problem? Most people don't realise until it's too late.
+        </p>
+
+        <div class="problem-list">
+          <div class="problem-item">
+            <i class="fas fa-fire"></i>
+            <p><strong>Electrical faults are the #1 cause of house fires in Ireland.</strong> Overloaded circuits and poor installations are a ticking time bomb in your walls.</p>
+          </div>
+          <div class="problem-item">
+            <i class="fas fa-euro-sign"></i>
+            <p><strong>Cheap electrical work costs 3× more to fix.</strong> Cutting corners today means call-out fees, re-wiring costs, and insurance headaches tomorrow.</p>
+          </div>
+          <div class="problem-item">
+            <i class="fas fa-gavel"></i>
+            <p><strong>Non-compliant work can void your insurance.</strong> Only certified, RECI-registered contractors provide legally compliant electrical certificates.</p>
+          </div>
+        </div>
+
+        <div class="agitate-box">
+          <h3>Don't gamble with your family's safety.</h3>
+          <p>E.Doc Electrical ensures every job is done right — safe, certified, and built to last. You choose peace of mind. We handle the rest.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS
+============================================================ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="3">0</span>+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="40">0</span>+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4.8</div>
+        <div class="stat-label">Average Rating</div>
+        <div class="stat-stars">★★★★★</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="100">0</span>%</div>
+        <div class="stat-label">Jobs Completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section id="services" class="section-pad">
+  <div class="container">
+    <div class="services-header reveal">
+      <div class="badge"><i class="fas fa-tools"></i> What We Do</div>
+      <h2 class="section-title" style="margin-top:16px;">
+        Our <span>Electrical</span> Services
+      </h2>
+      <p class="section-sub">
+        From a single socket to a full industrial fit-out — we handle every scale of electrical work to the highest standard.
+      </p>
+    </div>
+
+    <div class="services-grid" style="margin-top: 48px;">
+
+      <!-- Domestic -->
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-icon-wrap"><i class="fas fa-house"></i></div>
+        <h3>Domestic Electrical</h3>
+        <p>Safe, tidy, certified electrical work for your home. New builds, extensions, renovations — we've got you covered from start to finish.</p>
+        <ul class="service-list">
+          <li>Full house wiring &amp; rewiring</li>
+          <li>Fuse board upgrades (consumer unit)</li>
+          <li>Sockets, switches &amp; lighting</li>
+          <li>EV home charger installation</li>
+          <li>Smart home automation</li>
+          <li>Fault finding &amp; repairs</li>
+        </ul>
+      </div>
+
+      <!-- Commercial -->
+      <div class="service-card service-card-featured reveal" style="transition-delay:0.2s">
+        <div class="featured-label">Most Popular</div>
+        <div class="service-icon-wrap"><i class="fas fa-building"></i></div>
+        <h3>Commercial Electrical</h3>
+        <p>Reliable electrical solutions for shops, offices, restaurants and commercial properties. Minimal downtime, maximum professionalism.</p>
+        <ul class="service-list">
+          <li>Office &amp; retail fit-outs</li>
+          <li>Three-phase power installation</li>
+          <li>Emergency lighting &amp; fire alarm</li>
+          <li>Data cabling &amp; network points</li>
+          <li>Outdoor &amp; signage lighting</li>
+          <li>EICR inspections &amp; certification</li>
+        </ul>
+      </div>
+
+      <!-- Industrial -->
+      <div class="service-card reveal" style="transition-delay:0.3s">
+        <div class="service-icon-wrap"><i class="fas fa-industry"></i></div>
+        <h3>Industrial Electrical</h3>
+        <p>Heavy-duty electrical installations for factories, warehouses and industrial facilities. Built tough. Built right. Built compliant.</p>
+        <ul class="service-list">
+          <li>High-voltage installations</li>
+          <li>Motor &amp; machine wiring</li>
+          <li>Control panel design &amp; build</li>
+          <li>Warehouse lighting upgrade</li>
+          <li>Power distribution systems</li>
+          <li>Periodic inspection &amp; testing</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:44px;" class="reveal">
+      <a href="#contact" class="btn btn-primary" style="font-size:1rem; padding:16px 36px;">
+        <i class="fas fa-calendar-alt"></i> Request a Free Quote
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AREAS WE SERVE
+============================================================ -->
+<section id="areas" class="section-pad">
+  <div class="container">
+    <div class="areas-grid">
+      <div>
+        <div class="badge reveal"><i class="fas fa-map-marker-alt"></i> Coverage</div>
+        <h2 class="section-title reveal" style="margin-top:16px;">
+          Serving <span>Ireland</span><br/>
+          Near &amp; Far
+        </h2>
+        <p class="section-sub reveal">
+          Based in Limerick, we travel across Munster and beyond to bring certified electrical services to homes and businesses all over Ireland.
+        </p>
+
+        <div class="areas-list">
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Limerick</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Clare</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Tipperary</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Cork</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Kerry</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Galway</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> Dublin</div>
+          <div class="area-chip reveal"><i class="fas fa-map-pin"></i> &amp; Nationwide</div>
+        </div>
+
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-top:20px;">
+          <i class="fas fa-info-circle" style="color:var(--yellow)"></i> Don't see your area? <a href="#contact" style="color:var(--yellow)">Contact us</a> — we'll travel for the right job.
+        </p>
+      </div>
+
+      <div class="areas-image reveal-right">
+        <img
+          src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&auto=format&fit=crop&q=80"
+          alt="Electrician at work in Ireland"
+          loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&auto=format&fit=crop&q=80'"
+        />
+        <div class="map-overlay">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Based in Limerick</strong>
+            <span>Munster &amp; Nationwide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+============================================================ -->
+<section id="gallery" class="section-pad" style="background:var(--bg-section);">
+  <div class="container">
+    <div class="gallery-header reveal">
+      <div class="badge"><i class="fas fa-images"></i> Our Work</div>
+      <h2 class="section-title" style="margin-top:16px;">
+        Real Projects, <span>Real Results</span>
+      </h2>
+      <p class="section-sub" style="margin:14px auto 0;">
+        Take a look at some of the electrical work we've completed for homes and businesses across Ireland.
+      </p>
+    </div>
+
+    <div class="gallery-grid" style="margin-top:44px;">
+      <div class="gallery-item reveal" onclick="openLightbox(this)">
+        <img
+          src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1000&auto=format&fit=crop&q=80"
+          alt="Electrician working on panel"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label"><i class="fas fa-expand-alt"></i> Commercial Panel Upgrade · Limerick</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:0.1s" onclick="openLightbox(this)">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80"
+          alt="Electrical fuse board"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label"><i class="fas fa-expand-alt"></i> Fuse Board Replacement · Clare</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:0.15s" onclick="openLightbox(this)">
+        <img
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80"
+          alt="Office electrical fit-out"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label"><i class="fas fa-expand-alt"></i> Office Fit-Out · Cork</div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="transition-delay:0.2s" onclick="openLightbox(this)">
+        <img
+          src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&auto=format&fit=crop&q=80"
+          alt="Industrial electrical work"
+          loading="lazy"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label"><i class="fas fa-expand-alt"></i> Industrial Wiring · Tipperary</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+<section id="why" class="section-pad">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="badge reveal"><i class="fas fa-star"></i> Why E.Doc Electrical</div>
+        <h2 class="section-title reveal" style="margin-top:16px;">
+          We Don't Just Wire —<br/> We <span>Care</span>
+        </h2>
+        <p class="section-sub reveal">
+          Derek brings the same dedication to a single socket replacement as he does to a full industrial installation. No job is too small, no standard is too high.
+        </p>
+
+        <div class="why-list">
+          <div class="why-item reveal">
+            <div class="why-num">01</div>
+            <div class="why-text">
+              <h4>Fully Certified &amp; Insured</h4>
+              <p>All work is completed to RECI standards with full certification provided. Your home, your business, your peace of mind — protected.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-num">02</div>
+            <div class="why-text">
+              <h4>Transparent, Fixed Pricing</h4>
+              <p>No surprise invoices. We quote clearly before we start, and we stick to it. You know exactly what you're paying for.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-num">03</div>
+            <div class="why-text">
+              <h4>Tidy, Respectful Work</h4>
+              <p>We treat your property like our own. We show up on time, work cleanly, and leave the place better than we found it.</p>
+            </div>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-num">04</div>
+            <div class="why-text">
+              <h4>You're in Safe Hands</h4>
+              <p>With 3+ years of experience and 40+ satisfied clients, you're choosing an electrician who has built his reputation on doing the right thing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-image-col reveal-right">
+        <img
+          src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&auto=format&fit=crop&q=80"
+          alt="Electrician working safely"
+          loading="lazy"
+          onerror="this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&auto=format&fit=crop&q=80'"
+        />
+        <div class="cert-badge">
+          <i class="fas fa-shield-halved"></i>
+          <p>RECI<br/>Certified</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section id="testimonials" class="section-pad">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <div class="badge"><i class="fas fa-comments"></i> Client Reviews</div>
+      <h2 class="section-title" style="margin-top:16px;">
+        What Our <span>Clients</span> Say
+      </h2>
+      <div class="reviews-overall">
+        <div class="big-score">4.8</div>
+        <div class="stars-col">
+          <div class="stars">★★★★★</div>
+          <div class="reviews-count">Based on 40+ verified reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-track" style="margin-top:48px;">
+
+      <div class="review-card reveal" style="transition-delay:0.1s">
+        <div class="review-quote">"</div>
+        <p class="review-text">Derek sorted our full house rewire before we moved in. Absolute professional — clean, quick and certified. Would not hesitate to recommend E.Doc to anyone in Limerick.</p>
+        <div class="review-author">
+          <div class="review-avatar">SM</div>
+          <div>
+            <div class="review-name">Sarah M.</div>
+            <div class="review-role">Homeowner, Limerick</div>
+          </div>
+          <div style="margin-left:auto; color:var(--yellow); font-size:0.85rem;">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.2s">
+        <div class="review-quote">"</div>
+        <p class="review-text">We had Derek fit out our new café from scratch — three-phase supply, lighting, sockets, the lot. Delivered on budget, zero snags. Our go-to electrician from now on.</p>
+        <div class="review-author">
+          <div class="review-avatar">TC</div>
+          <div>
+            <div class="review-name">Tom C.</div>
+            <div class="review-role">Café Owner, Cork</div>
+          </div>
+          <div style="margin-left:auto; color:var(--yellow); font-size:0.85rem;">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.3s">
+        <div class="review-quote">"</div>
+        <p class="review-text">Called Derek at 8am on a Monday with a tripped fuse board. He was on site within two hours and had everything sorted before lunchtime. Brilliant service — very fair price.</p>
+        <div class="review-author">
+          <div class="review-avatar">PO</div>
+          <div>
+            <div class="review-name">Patrick O'Brien</div>
+            <div class="review-role">Property Manager, Tipperary</div>
+          </div>
+          <div style="margin-left:auto; color:var(--yellow); font-size:0.85rem;">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.1s">
+        <div class="review-quote">"</div>
+        <p class="review-text">Got our EV charger installed by Derek — seamless from start to finish. Explained everything clearly, left no mess, and even sent through the grant paperwork advice. Top class.</p>
+        <div class="review-author">
+          <div class="review-avatar">AM</div>
+          <div>
+            <div class="review-name">Aoife Murphy</div>
+            <div class="review-role">Homeowner, Clare</div>
+          </div>
+          <div style="margin-left:auto; color:var(--yellow); font-size:0.85rem;">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.2s">
+        <div class="review-quote">"</div>
+        <p class="review-text">We hired E.Doc for our warehouse lighting upgrade — 120 LED fittings in two days. Night and day difference in the space. Energy costs down, staff morale up. Highly recommended.</p>
+        <div class="review-author">
+          <div class="review-avatar">JK</div>
+          <div>
+            <div class="review-name">James K.</div>
+            <div class="review-role">Warehouse Manager, Galway</div>
+          </div>
+          <div style="margin-left:auto; color:var(--yellow); font-size:0.85rem;">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" style="transition-delay:0.3s">
+        <div class="review-quote">"</div>
+        <p class="review-text">Derek handled our full office fit-out — 30 workstations, server room cabling, and emergency lighting. Every detail was perfect and the EICR cert came through the next day.</p>
+        <div class="review-author">
+          <div class="review-avatar">NF</div>
+          <div>
+            <div class="review-name">Niamh F.</div>
+            <div class="review-role">Office Manager, Dublin</div>
+          </div>
+          <div style="margin-left:auto; color:var(--yellow); font-size:0.85rem;">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:56px;" class="reveal">
+      <div class="badge"><i class="fas fa-envelope"></i> Get In Touch</div>
+      <h2 class="section-title" style="margin-top:16px;">
+        Ready to Get <span>Started?</span>
+      </h2>
+      <p class="section-sub" style="margin:14px auto 0;">
+        Fill in the form and Derek will be in touch within a few hours. Or, call / WhatsApp directly for a faster response.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <div class="contact-form-wrap reveal-left">
+        <h3>Request a Free Quote</h3>
+        <p>Tell us about your job and we'll come back with a clear, competitive price.</p>
+
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <label>First Name</label>
+              <input type="text" placeholder="John" required />
+            </div>
+            <div class="field">
+              <label>Last Name</label>
+              <input type="text" placeholder="Murphy" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.ie" required />
+          </div>
+
+          <div class="field">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+353 8X XXX XXXX" />
+          </div>
+
+          <div class="field">
+            <label>Service Needed</label>
+            <select required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>Domestic — Full Rewire</option>
+              <option>Domestic — Fuse Board Upgrade</option>
+              <option>Domestic — EV Charger</option>
+              <option>Domestic — General / Repairs</option>
+              <option>Commercial — Office / Retail Fit-Out</option>
+              <option>Commercial — EICR Inspection</option>
+              <option>Industrial — Wiring &amp; Fit-Out</option>
+              <option>Industrial — Lighting Upgrade</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Message</label>
+            <textarea placeholder="Brief description of the work needed, property size, location..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fas fa-paper-plane"></i> Send My Request
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-circle-check"></i>
+          <h4>Message Received!</h4>
+          <p>Derek will be in touch with you within a few hours. For urgent work, WhatsApp him directly.</p>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="contact-info reveal-right">
+        <div class="contact-info-header">
+          <div class="badge"><i class="fas fa-user-hard-hat"></i> Derek Keegan</div>
+          <h3>Let's Talk<br/>About Your Job</h3>
+          <p>No pressure, no hard sell. Just an honest chat about what your project needs and a fair price to get it done right.</p>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
+          <div class="contact-detail-text">
+            <strong>Phone / Call</strong>
+            <a href="tel:+353871234567">+353 87 123 4567</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-detail-text">
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/353871234567?text=Hi%20Derek%2C%20I%20want%20your%20service" target="_blank">+353 87 123 4567</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            <a href="mailto:info@edocelectrical.ie">info@edocelectrical.ie</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-detail-text">
+            <strong>Hours</strong>
+            <span>Mon–Fri: 7am–6pm &nbsp;·&nbsp; Sat: 8am–2pm</span>
+          </div>
+        </div>
+
+        <!-- Map — Limerick, Ireland (dummy location) -->
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38610.89345!2d-8.6305!3d52.6638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5d2e69e3d8e1%3A0x7e48e7b8d3c5d3e8!2sLimerick%2C%20Ireland!5e0!3m2!1sen!2sie!4v1700000000000!5m2!1sen!2sie"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="E.Doc Electrical Location — Limerick, Ireland"
+          ></iframe>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" style="display:inline-flex;">
+          <div class="logo-icon">⚡</div>
+          <div>
+            <div class="logo-text">E.<span>Doc</span> Electrical</div>
+            <span class="logo-sub">Powered by expertise</span>
+          </div>
+        </a>
+        <p>Professional electrical services across Ireland. Domestic, commercial and industrial — done right, every time.</p>
+        <div class="contact-social">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/353871234567?text=Hi%20Derek%2C%20I%20want%20your%20service" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Domestic Electrical</a></li>
+          <li><a href="#services">Commercial Electrical</a></li>
+          <li><a href="#services">Industrial Electrical</a></li>
+          <li><a href="#services">EV Charger Installation</a></li>
+          <li><a href="#services">EICR Inspections</a></li>
+          <li><a href="#services">Emergency Callouts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">About Derek</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#gallery">Our Work</a></li>
+          <li><a href="#areas">Areas Covered</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+353871234567"><i class="fas fa-phone-alt" style="color:var(--yellow); margin-right:6px;"></i>+353 87 123 4567</a></li>
+          <li><a href="mailto:info@edocelectrical.ie"><i class="fas fa-envelope" style="color:var(--yellow); margin-right:6px;"></i>info@edocelectrical.ie</a></li>
+          <li><a href="#areas"><i class="fas fa-map-marker-alt" style="color:var(--yellow); margin-right:6px;"></i>Limerick, Ireland</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 <span>E Doc Electrical</span>. All rights reserved. | <a href="mailto:info@edocelectrical.ie" style="color:var(--text-muted)">info@edocelectrical.ie</a></p>
+      <p style="font-size:0.75rem;">Registered Electrical Contractor · Ireland · RECI Certified</p>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
