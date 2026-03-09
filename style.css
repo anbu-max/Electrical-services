@@ -417,14 +417,16 @@
       align-items: center;
     }
 
-    /* WhatsApp CTA button icon fix */
+    /* WhatsApp CTA button size reduction */
     .btn-whatsapp {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      padding: 10px 24px;
+      font-size: 0.85rem;
     }
     .btn-whatsapp i {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -435,6 +437,7 @@
       display: flex; align-items: center; gap: 36px;
       margin-top: 52px;
       padding-top: 32px;
+      margin-bottom: 60px;
       border-top: 1px solid var(--border);
       animation: fadeDown 0.8s ease 0.85s both;
       flex-wrap: wrap;
