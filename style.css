@@ -344,7 +344,7 @@
       background-size: cover;
       background-position: center 30%;
       transform: scale(1.05);
-      transition: transform 8s ease;
+      transition: transform 2.5s ease-out;
     }
     .hero-bg.loaded { transform: scale(1); }
 
