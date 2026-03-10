@@ -614,27 +614,27 @@
           <div class="form-row">
             <div class="field">
               <label>First Name</label>
-              <input type="text" placeholder="John" required />
+              <input type="text" id="firstName" placeholder="John" required />
             </div>
             <div class="field">
               <label>Last Name</label>
-              <input type="text" placeholder="Murphy" required />
+              <input type="text" id="lastName" placeholder="Murphy" required />
             </div>
           </div>
 
           <div class="field">
             <label>Email Address</label>
-            <input type="email" placeholder="john@example.ie" required />
+            <input type="email" id="email" placeholder="john@example.ie" required />
           </div>
 
           <div class="field">
             <label>Phone Number</label>
-            <input type="tel" placeholder="+353 8X XXX XXXX" />
+            <input type="tel" id="phone" placeholder="+353 8X XXX XXXX" />
           </div>
 
           <div class="field">
             <label>Service Needed</label>
-            <select required>
+            <select id="service" required>
               <option value="" disabled selected>Select a service...</option>
               <option>Domestic — Full Rewire</option>
               <option>Domestic — Fuse Board Upgrade</option>
@@ -650,7 +650,7 @@
 
           <div class="field">
             <label>Message</label>
-            <textarea placeholder="Brief description of the work needed, property size, location..."></textarea>
+            <textarea id="message" placeholder="Brief description of the work needed, property size, location..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary form-submit">

@@ -70,11 +70,41 @@
     if (e.key === 'Escape') closeLightbox();
   });
 
-  /* ---- Contact form ---- */
+  /* ---- Contact form WhatsApp Redirect ---- */
   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
+    
+    // Get form values
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+
+    // Create message string
+    const whatsappMessage = 
+      `Hi Derek! My name is ${firstName} ${lastName}.%0A%0A` +
+      `I'm interested in your *${service}* service.%0A%0A` +
+      `*Details:*%0A` +
+      `Email: ${email}%0A` +
+      `Phone: ${phone}%0A` +
+      `Message: ${message}`;
+
+    // Your WhatsApp Number
+    const mobileNumber = "353871234567";
+
+    // Create the final WhatsApp URL
+    const whatsappUrl = `https://wa.me/${mobileNumber}?text=${whatsappMessage}`;
+
+    // Show success message and redirect
     this.style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
+
+    // Small delay before opening WhatsApp to show the success message
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+    }, 1500);
   });
 
   /* ---- Smooth nav active state ---- */
